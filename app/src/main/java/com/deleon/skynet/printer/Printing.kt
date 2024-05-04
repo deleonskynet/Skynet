@@ -31,7 +31,7 @@ abstract class Printing(
             breakTime(100)
             texts.forEachIndexed { index, text ->
                 publishStatus(Status(index.plus(3), progressMax))
-                pos.printFormattedText(text, 0f)
+                pos.printFormattedText(text, 5f)
                 breakTime(500)
             }
             publishStatus(Status(progressMax, progressMax))
