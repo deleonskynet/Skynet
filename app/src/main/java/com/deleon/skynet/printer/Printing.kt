@@ -55,7 +55,7 @@ abstract class Printing(
             1 -> "Connecting...."
             2 -> "Connected"
             status.finish -> "Printed"
-            else -> "Printing: ${status.state.minus(3)}/${status.finish.minus(3)}"
+            else -> "Printing: ${status.state.minus(3)}/${status.finish.minus(4)}"
         }.asMessage()
     }
 
